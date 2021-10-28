@@ -8,6 +8,16 @@ The BASIC ROM of this machine is able to load chunks of raw data into the RAM. m
 
 The load location is in the BASIC program area (TXTTAB=0x49FC); so that the Call trampoline is interpreted as a normal program, and the binary is appended with a tunable offset (default is to reserve 16 bytes for the trampoline).
 
+# toy example: hello.s
+
+As an example, `hello.s` and a simple Makefile are provided. 
+
+Required tools: sdcc, binutils
+
+In order to build `hello.k7`, run: `make PROJ=hello`
+
+To run the k7 file, start a VG5000 emulator (example: [DCVG5K](http://dcvg5k.free.fr/)), load the k7 file and type `CLOAD<enter>`
+
 # usage
 ```
 mkk7 [-l <load_addr>] [-e <entry>] [-n <name>] <binary> <k7>
