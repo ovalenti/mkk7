@@ -1,5 +1,5 @@
 # mkk7
-An utility to turn a Z80 binary file into a loadable K7 for the VG5000.
+An utility to turn a Z80 binary file into a loadable "cassette tape" file (.k7 extension) for the VG5000.
 
 The BASIC ROM of this machine is able to load chunks of raw data into the RAM. mkk7 does the necessary wrapping to:
 - prepend a compatible K7 file header
